@@ -203,15 +203,15 @@ html {
 /* social media icons  */
 .social-media {
   margin-top: 30px;
+  text-align: center; /* Adicionando para centralizar os ícones */
 }
 
 .social-media a {
-  display: inline-block;
-  margin: 9px;
+  display: inline-block; /* Alterado de 'block' para 'inline-block' */
+  margin: 9px; /* Adicionado um margin entre os ícones */
   font-size: 34px;
   color: var(--color-white);
   cursor: pointer;
-  margin-right: 15px;
   transition: all .50s ease;
 }
 
