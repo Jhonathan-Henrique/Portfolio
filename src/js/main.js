@@ -17,8 +17,8 @@ $(document).ready(function () {
     // typing animation
     var typed = new Typed('.typing', {
       strings: [
-        'Desenvolvedora full stack',
-        'Apaixonada por Códigos'
+        'Desenvolvedor Front-End',
+        'Engenheiro de Software'
       ],
       typeSpeed: 100,
       backSpeed: 60,
