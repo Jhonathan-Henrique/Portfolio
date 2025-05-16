@@ -156,31 +156,40 @@ const AboutPage = () => {
 
   // Memoized stats data
   const statsData = useMemo(() => [
-    {
-      icon: Code,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: totalProjects,
-      label: "Total Projetos",
-      description: "Meus projetos de dados",
-      animation: "fade-right",
-    },
-    {
-      icon: Award,
-      color: "from-[#a855f7] to-[#6366f1]",
-      value: totalCertificates,
-      label: "Certificados",
-      description: "Minhas validações como profissional",
-      animation: "fade-up",
-    },
-    {
-      icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
-      label: "Anos de experiencia",
-      description: "Continuo na jornada da aprendizagem",
-      animation: "fade-left",
-    },
-  ], [totalProjects, totalCertificates, YearExperience]);
+  {
+    icon: Code,
+    color: "from-[#6366f1] to-[#a855f7]",
+    value: "6",
+    label: "Total Projetos",
+    description: "Meus projetos de dados",
+    animation: "fade-right",
+  },
+  {
+    icon: Award,
+    color: "from-[#a855f7] to-[#6366f1]",
+    value: "46",
+    label: (
+      <a 
+        href="https://drive.google.com/drive/folders/1aKNJBE6FCQUq4VsEOiY7oE8Pz3snZycw?usp=sharing" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="underline hover:text-purple-400"
+      >
+        Certificados
+      </a>
+    ),
+    description: "Minhas validações como profissional",
+    animation: "fade-up",
+  },
+  {
+    icon: Globe,
+    color: "from-[#6366f1] to-[#a855f7]",
+    value: "5",
+    label: "Anos de experiencia",
+    description: "Continuo na jornada da aprendizagem",
+    animation: "fade-left",
+  },
+], [totalProjects, totalCertificates, YearExperience]);
 
   return (
     <div
@@ -229,7 +238,7 @@ const AboutPage = () => {
                 <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Baixar Curriculo
               </button>
               </a>
-              <a href="#Portofolio" className="w-full lg:w-auto">
+              <a href="https://github.com/Jhonathan-Henrique?tab=repositories" className="w-full lg:w-auto">
               <button 
                 data-aos="fade-up"
                 data-aos-duration="1000"
